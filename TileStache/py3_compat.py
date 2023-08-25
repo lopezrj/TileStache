@@ -18,9 +18,9 @@ reduce = reduce
 try:
     import urllib.request as urllib2
     import http.client as httplib
-    from urllib.parse import urlparse, urljoin, parse_qsl
+    from urllib.parse import urlparse, urljoin, parse_qs, parse_qsl
     from urllib.request import urlopen
-    from cgi import parse_qs
+    # from cgi import parse_qs   ## Now included in urllib.parse
     from _thread import allocate_lock
     unichr = chr
 except ImportError:
